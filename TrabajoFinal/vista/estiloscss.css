@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffc107;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+header img {
+    height: 90px;
+    margin-right: 20px; 
+}
+
+.intro {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #e6b800; /* Color que armoniza con el encabezado */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.intro h2 {
+    font-size: 2em;
+    color: #007bff;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #343a40;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+    flex-grow: 1;
+    background: linear-gradient(to bottom, #343a40, #495057);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    padding: 0 1em;
+}
+
+.nav-item {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    text-align: center;
+    width: 180px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.nav-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.7em 1.2em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.nav-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.nav-item button:hover {
+    background-color: #0056b3;
+}
+
+.nav-item p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

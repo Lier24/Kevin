@@ -1,0 +1,169 @@
+/* Asegura que el footer esté al final de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+    text-align: center;
+    background-color: #f9f9f9; /* Color de fondo suave para diferenciarlo del resto */
+    margin-top: 1em;
+    border-radius: 8px; /* Bordes redondeados para una estética más moderna */
+}
+
+header {
+    background-color: #ffc107;
+    padding: 1em;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+header img {
+    height: 90px;
+    margin-right: 20px; 
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.table-container {
+    margin: 0 auto;
+    max-width: 1000px; /* Aumenta el ancho máximo del contenedor */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 1em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th, td {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 16px; /* Aumenta el tamaño del texto para mejor legibilidad */
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+/* Estilo general para los botones */
+button {
+    background-color: #3498db; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Estilo para el botón de eliminar */
+button[type="submit"] {
+    background-color: #e74c3c; /* Color de fondo rojo */
+}
+
+button:hover {
+    background-color: #2980b9; /* Color más oscuro al hacer hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #c0392b; /* Color rojo más oscuro al hacer hover */
+}
+
+/* Estilo específico para el formulario de agregar alumno */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px 0;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Contenedor de la tabla */
+.table-container {
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal para centrar vertical y horizontalmente */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Ajusta esto según tu preferencia */
+    margin-top: 20px;
+}
+
+/* Estilo específico para el formulario de agregar alumno */
+form.agregar-alumno {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form.agregar-alumno label {
+    margin: 10px 0 5px;
+}
+
+form.agregar-alumno input[type="text"],
+form.agregar-alumno input[type="email"],
+form.agregar-alumno input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+form.agregar-alumno button {
+    align-self: center; /* Centra el botón dentro del formulario */
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+}
